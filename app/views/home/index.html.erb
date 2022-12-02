@@ -1,0 +1,116 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>cars</title>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+      <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+      <link rel="stylesheet" href="assets/css/styles.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+  </head>
+
+  <body>
+      <h1>Homepage&nbsp;</h1>
+      <section class="article-clean">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                      <div class="intro">
+                          <h1 class="text-center">Helping express yourself</h1>
+                      </div>
+                      <div class="text">
+                        <h1> Travel Articles </h1>
+
+                        <ul>
+                          <% @home.each do |home| %>
+                          <li>
+                            <%= link_to home.title, home %>
+                          </li>
+
+                          <% end %>
+                          </ul>
+
+                          <%= link_to "Tell us your travel experiance", new_home_path %>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="photo-gallery"></section>
+      <section class="projects-horizontal">
+          <div class="container">
+              <div class="intro">
+                  <h2 class="text-center">Latest Articles&nbsp;</h2>
+                  <p class="text-center">Checkout the latest articles</p>
+              </div>
+              <div class="row projects" style="margin-bottom: 100px;">
+                  <div class="col-sm-6 item">
+                      <div class="row">
+                          <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
+                          <div class="col">
+                              <h3 class="name">Project Name</h3>
+                              <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 item">
+                      <div class="row">
+                          <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/building.jpg"></a></div>
+                          <div class="col">
+                              <h3 class="name">Project Name</h3>
+                              <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 item">
+                      <div class="row">
+                          <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/loft.jpg"></a></div>
+                          <div class="col">
+                              <h3 class="name">Project Name</h3>
+                              <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 item">
+                      <div class="row">
+                          <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/minibus.jpeg"></a></div>
+                          <div class="col">
+                              <h3 class="name">Project Name</h3>
+                              <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="highlight-clean">
+          <div class="container">
+              <div class="intro">
+                  <h2 class="text-center">Highlight</h2>
+                  <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+              </div>
+              <div class="buttons"><a class="btn btn-primary" role="button" href="#" style="background: #dddddd;color: rgb(0,0,0);">Log in</a><button class="btn btn-light" type="button" style="background: rgb(221, 221, 221);">Register</button></div>
+          </div>
+      </section>
+      <footer class="footer-basic" style="background: #ff69b4;">
+          <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+          <ul class="list-inline">
+              <%= link_to root_path do %>
+              <li class="list-inline-item"><a href="#">Home</a></li>
+              <% end %>
+              <li class="list-inline-item"><a href="#">Services</a></li>
+              <li class="list-inline-item"><a href="#">About</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Company Name Â© 2022</p>
+      </footer>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+      <script src="assets/js/script.min.js"></script>
+  </body>
+
+  </html>

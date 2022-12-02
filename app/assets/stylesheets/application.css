@@ -1,0 +1,168 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ /*CSS page*/
+ /*New Css Project*/
+ @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body{
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* Styling all the elements in nav as a whole */
+        .topnav {
+             background: grey;
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+             justify-content: space-between;
+             height: 100px;
+             padding: 0 150px;
+         }
+
+         /* Styling the logo */
+
+
+         /* Styling all the nav items as a whole */
+         .topnav .nav-items {
+             display: flex;
+             flex: 1;
+             padding: 0 0 0 200px;
+         }
+
+         /* Styling the list items in the nav tag */
+        .topnav .nav-items li {
+             list-style: none;
+             padding: 0 10px;
+         }
+
+         /* Styling each list items */
+         .topnav .nav-items li a {
+             color: #fff;
+             font-size: 15px;
+             font-weight: 500;
+             text-decoration: none;
+         }
+
+         /* Setting the hover colour on the list items*/
+
+         .topnav .nav-items li a:hover {
+             color: #19191b;
+         }
+
+         .topnav .searchbar {
+             position: relative;
+         }
+
+         /* Styling the search box where the
+             input would be given */
+         .topnav .searchbar input[type="text"] {
+             border: 0;
+             padding: 0;
+             width: 0px;
+             height: 35px;
+             border-radius: 3px;
+             transition: all 0.3s ease;
+         }
+
+         /* Styling the search bar icon */
+         .topnav .searchbar .icon {
+             display: flex;
+             position: absolute;
+             top: 0;
+             right: 0;
+             width: 35px;
+             height: 100%;
+             background: none;
+             border-radius: 3px;
+             color: #fff;
+             transition: all 0.5s 0.3s ease;
+         }
+
+         .topnav .searchbar .icon i {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             cursor: pointer;
+         }
+
+         .topnav .searchbar .icon.active {
+             background: #062333;
+             transition: all 0.3s ease;
+         }
+
+         .topnav .searchbar input[type="text"].active {
+             width: 250px;
+             padding: 0 10px;
+             transition: all 0.5s 0.2s ease;
+         }
+
+         .topnav .licon li {
+             list-style: none;
+             display: flex;
+         }
+
+         .topnav .licon li a {
+             padding: 0 20px;
+         }
+
+         /* Changing the colour of the login
+             icon when hovered over*/
+
+         .fa-user-circle:hover {
+             color: #0e0d0d !important;
+         }
+
+         .dropbtn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+ }
+
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+
+ .dropdown-content a:hover {background-color: #f1f1f1}
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+ .dropdown:hover .dropbtn {
+   background-color: #3e8e41;
+ }

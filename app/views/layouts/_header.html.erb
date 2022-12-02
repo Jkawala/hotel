@@ -1,0 +1,51 @@
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - JK Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <div class="topnav">
+      <div class="logo">
+      <%= link_to root_path do %>
+       <img src= "https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="~" width="50"/>
+      <% end %>
+      </div>
+
+    <div class="nav-items">
+    <li> <%= link_to "Home", root_path %> </li>
+    <li><a href="#">Page</a></li>
+    <li><a href="#"> Conatct</a></li>
+    <li><a href="#"> About</a></li>
+    </div>
+
+    <div class="nav-items">
+      <input type="text" placeholder="search">
+      <div class="icon">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Account</button>
+      <div class="dropdown-content">
+      <a href="#">Sign In</a>
+      <a href="#">Edit Account</a>
+      <a href="#">Link 3</a>
+      </div>
+    </div>
+
+
+ </div>
+</body>
+
+<%= render "shared/modal" %>
